@@ -1,4 +1,4 @@
-# taxtree
+# taxtree-rs <img src="https://github.com/nongxinshengxin/taxtree/blob/main/image/TAXTREE.png" align="right" alt="taxtree logo" style="height: 140px;">
 
 NCBI Taxonomy 数据库的 Rust 命令行工具与库。从 **names.dmp** 和 **nodes.dmp** 构建分类学索引，支持分类等级查询、进化树构建、谱系展开，输出 TSV / JSON / Newick 格式。
 
@@ -10,7 +10,7 @@ NCBI Taxonomy 数据库的 Rust 命令行工具与库。从 **names.dmp** 和 **
 
 ### 预编译二进制
 
-从 [Releases](https://github.com/nongxinshengxin/taxtree/releases) 页面下载对应平台的二进制文件，放入 `PATH` 即可。
+从 [Releases](https://github.com/nongxinshengxin/taxtree-rs/releases) 页面下载对应平台的二进制文件，放入 `PATH` 即可。
 
 ### 从源码编译
 
@@ -299,7 +299,6 @@ match index.rank_by_name("unknown") {
 
 - 原始 taxtree R 包：<https://github.com/nongxinshengxin/taxtree>
 - NCBI Taxonomy 数据库：<https://www.ncbi.nlm.nih.gov/taxonomy>
-- Yu G, Smith DK, Zhu H, Guan Y, Lam TTY (2017). ggtree: an R package for visualization and annotation of phylogenetic trees. *Methods in Ecology and Evolution*, 8(1):28-36.
 
 ## 许可
 
