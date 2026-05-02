@@ -4,7 +4,19 @@ NCBI Taxonomy 数据库的 Rust 命令行工具与库。从 **names.dmp** 和 **
 
 ## 背景
 
-[NCBI Taxonomy](https://www.ncbi.nlm.nih.gov/taxonomy) 收录了地球上已描述物种中约 10% 的生物分类与命名信息，当前包含超过 **76 万**个分类单元（taxa）。本项目是 R 包 [taxtree](https://github.com/nongxinshengxin/taxtree) 的 Rust 移植版本，保留了其核心的分类查询与树构建能力，同时提供更快的执行速度和更小的资源占用。
+[NCBI Taxonomy](https://www.ncbi.nlm.nih.gov/taxonomy) 收录了地球上已描述物种中约 10% 的生物分类与命名信息，当前包含超过 **273 万**个分类单元（taxa）。
+| Ranks | higher taxa | genus | species | lower taxa | total |
+|--|--|--|--|--|--|
+|Archaea|0|340|13,433|15,247|15,247|
+|Bacteria|0|5,801|536,561|603,272|603,272|
+|Eukaryota|0|104,589|1,593,536|1,822,537|1,822,537|
+|Fungi|0|8,108|196,115|216,679|216,679|
+|Metazoa|0|75,715|1,109,692|1,261,577|1,261,577|
+|Viridiplantae|0|16,481|235,560|280,070|280,070|
+|Viruses|117|3,793|85,454|263,089|277,332|
+|All taxa|151|114,525|2,250,063|2,704,151|***2,739,525***|
+
+本项目是 R 包 [taxtree](https://github.com/nongxinshengxin/taxtree) 的 Rust 移植版本，保留了其核心的分类查询与树构建能力，同时提供更快的执行速度和更小的资源占用。
 
 ## 安装
 
@@ -37,7 +49,7 @@ mkdir taxonomy && tar -xzf taxdump.tar.gz -C taxonomy
 ls taxonomy/names.dmp taxonomy/nodes.dmp
 ```
 
-> **提示**：完整数据库约 70 MB 压缩包，解压后约 500 MB。项目测试夹具中包含一份 mini 版本的数据，仅用于验证功能。
+> **提示**：完整数据库约 70 MB 压缩包，解压后约 500 MB。
 
 ## 快速开始
 
@@ -269,7 +281,7 @@ match index.rank_by_name("unknown") {
 
 ## 性能
 
-完整 NCBI Taxonomy 数据库（约 76 万 taxa，数据截至 2024 年 1 月「可能已更新」）：
+完整 NCBI Taxonomy 数据库（约 273 万 taxa，数据截至 2026 年 5 月「可能已更新」）：
 
 | 操作 | 耗时 |
 |------|------|
