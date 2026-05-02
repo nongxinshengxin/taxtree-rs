@@ -17,12 +17,12 @@ NCBI Taxonomy 数据库的 Rust 命令行工具与库。从 **names.dmp** 和 **
 需要 Rust 工具链（[rustup](https://rustup.rs/)）：
 
 ```bash
-git clone https://github.com/nongxinshengxin/taxtree.git
-cd taxtree/crates
+git clone https://github.com/nongxinshengxin/taxtree-rs.git
+cd taxtree-rs
 cargo build --release
 ```
 
-编译产物位于 `target/release/taxtree`，可将其复制到任意 `PATH` 目录。
+编译产物位于 `taxtree-rs/release/taxtree-rs`，可将其复制到任意 `PATH` 目录。
 
 ## 数据准备
 
