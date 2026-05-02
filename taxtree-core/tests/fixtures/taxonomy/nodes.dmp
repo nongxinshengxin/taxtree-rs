@@ -1,0 +1,18 @@
+1	|	1	|	no rank	|
+2	|	1	|	superkingdom	|
+1224	|	2	|	phylum	|
+1236	|	1224	|	class	|
+91347	|	1236	|	order	|
+543	|	91347	|	family	|
+561	|	543	|	genus	|
+562	|	561	|	species	|
+2759	|	1	|	superkingdom	|
+33208	|	2759	|	kingdom	|
+7711	|	33208	|	phylum	|
+9443	|	7711	|	order	|
+9604	|	9443	|	family	|
+9605	|	9604	|	genus	|
+9606	|	9605	|	species	|
+9598	|	9604	|	species	|
+1000	|	1	|	species	|
+1001	|	1	|	species	|

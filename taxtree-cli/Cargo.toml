@@ -1,0 +1,19 @@
+[package]
+name = "taxtree"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+authors.workspace = true
+
+[[bin]]
+name = "taxtree"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4", features = ["derive"] }
+taxtree-core = { path = "../taxtree-core" }
+
+[dev-dependencies]
+assert_cmd = "2"
+predicates = "3"
+tempfile = "3"
